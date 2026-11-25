@@ -1,0 +1,14 @@
+.venv/
+.cache/
+data/
+logs/
+outputs/checkpoints/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# kept on this machine only
+huggingface/
+report/
+notebooks/with_photos/
+env.local.sh

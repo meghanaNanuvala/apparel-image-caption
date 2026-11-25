@@ -1,0 +1,30 @@
+[project]
+name = "apparel-image-caption"
+version = "0.1.0"
+description = "Apparel image caption: Florence-2 fine-tuned on H&M product images to write alt-text"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch",
+    "torchvision",
+    "transformers>=4.56",
+    "accelerate",
+    "huggingface_hub",
+    "pyarrow",
+    "pillow",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "pycocoevalcap",
+    "nltk",
+    "tqdm",
+    "ipykernel",
+    "nbconvert",
+    "nbformat",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/utils"]
